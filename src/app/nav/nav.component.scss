@@ -1,0 +1,35 @@
+$black: #000814;
+$dark-blue: #001D3D;
+$blue: #003566;
+$dark-yellow: #FFC300;
+$yellow: #FFD60A;
+$red: #ff0054;
+$green: #38b000;
+
+.branding {
+  font-size: 16px;
+  color: $red;
+  text-decoration: none;
+}
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+a.nav-item-a {
+  display: block;
+  padding: 12px;
+  font-size: 16px;
+  color: $dark-yellow;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+li.nav-item:hover a.nav-item-a {
+  color: $red;
+}

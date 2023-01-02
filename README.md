@@ -1,27 +1,84 @@
-# RegexDebugger
+<p align="right">
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="20" height="20" alt="TypeScript" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="20" height="20" alt="HTML5" /></a>
+<a href="https://sass-lang.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="20" height="20" alt="Sass" /></a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+<p align="center">
+<a href="https://kilavik.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/angularjs-colored.svg" width="20" height="20" alt="Angular" /><span style="font-size: 24px"> Regex debugger</span></a>
+</p>
 
-## Development server
+<p align="center">
+Small web app for building, testing and debugging regular expressions.<br />
+Feel free to fork this project, make pull requests, report bugs or contribute in any way.<br />
+If you want to be a collaborator, contact me(contact info in my profile).
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<br />
 
-## Code scaffolding
+<p align="center">
+<img src="https://img.shields.io/badge/version-1.1.0-blue">
+<img src="https://img.shields.io/badge/angular-14.0.7-blue">
+<img src="https://img.shields.io/badge/node-16.15.1-blue">
+<img src="https://img.shields.io/badge/npm-8.11.0-blue">
+<img src="https://img.shields.io/badge/contributors-welcome-yellowgreen">
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<br />
+<br />
+
+## Prerequisites
+
+- HTML
+- CSS
+- JavaScript/TypeScript
+
+<br />
+
+## Requirements
+
+- Node.js
+- npm/yarn
+
+<br />
+<br />
+
+## Install, setup and run project
+
+First install `@angular/cli`:
+```
+$ npm install -g @angular/cli
+```
+
+Then install the required dependencies:
+```
+$ npm install
+```
+
+Finally start the project:
+```
+$ npm start
+```
+
+Open your browser and go to: [http://localhost:4200](http://localhost:4200).
+
+<br />
+<br />
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run the build with the following command:
+```
+$ npm run build
+```
 
-## Running unit tests
+Build files can be found in the `dist` directory.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<br />
+<br />
 
-## Running end-to-end tests
+#### [Change log](./CHANGELOG.md)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="right">
+<a href="https://www.buymeacoffee.com/kilavila" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+</p>

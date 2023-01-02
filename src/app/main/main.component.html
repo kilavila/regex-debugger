@@ -1,0 +1,98 @@
+<div class="wrapper">
+
+  <div class="row">
+
+    <div class="column">
+      <label>
+        [ Regular Expression ]
+      </label>
+      <div class="regex-wrapper">
+        <div class="regex-prefix">
+          /
+        </div>
+        <input [(ngModel)]="regularExpression" type="text" class="regex"
+          placeholder="Enter your regular expression here"
+          (keyup)="find(regularExpression, testString); replace(regularExpression, testString, substitution)" />
+        <button type="button" (click)="flagsMenu = !flagsMenu">
+          /{{ selectedFlags }}
+        </button>
+        <div class="flags-dropdown" *ngIf="flagsMenu">
+          <ul class="flags-list">
+            <ng-container *ngFor="let flag of flags">
+              <li class="flags-list-item" (click)="toggleFlag(flag.value)">
+                <div class="flag-check">
+                  [{{ selectedFlags.includes(flag.value) ? 'X' : ' ' }}]
+                </div>
+                <div class="flag-info">
+                  <div class="list-item-title">
+                    <!-- <span class="flag-value"> -->
+                    <!--   {{ '[' + flag + ']' }}  -->
+                    <!-- </span> -->
+                    {{ flag.title }}
+                  </div>
+                  <div class="list-item-description">
+                    {{ flag.description }}
+                  </div>
+                </div>
+              </li>
+            </ng-container>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="column">
+      <label>
+        [ Test String ]
+      </label>
+      <textarea [(ngModel)]="testString" class="text-input test-string"
+        placeholder="Enter your test string here" (keyup)="find(regularExpression, testString); replace(regularExpression, testString, substitution)" ></textarea>
+      <span class="matches" *ngIf="regularExpression.length > 0">
+        <span class="matches matches-label">
+          RegEx Matches:
+        </span>
+        <span class="divider">|</span>
+        <span *ngFor="let match of matches">
+          {{ match }} <span class="divider">|</span>
+        </span>
+      </span>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="column">
+      <label>
+        [ Substitution ]
+      </label>
+      <textarea [(ngModel)]="substitution" type="text" class="substitutionstitution"
+        placeholder="Enter your replacement value here"
+        (keyup)="replace(regularExpression, testString, substitution)"></textarea>
+      <!-- <button type="button" class="test-btn" (click)="run(regularExpression, testString, substitution)">Test</button> -->
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="column">
+      <label>
+        [ Result ]
+      </label>
+      <textarea [(ngModel)]="result" class="text-output result"
+        placeholder="Your result will be shown here. Press the button below to copy the result"></textarea>
+      <div class="action-row">
+        <button type="button" class="copy-btn" (click)="copy()" [disabled]="copied ? true : false">
+          {{ copied ? 'Copied to clipboard' : 'Copy' }}
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

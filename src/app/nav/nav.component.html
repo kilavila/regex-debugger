@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="row nav-row">
+
+    <div class="column nav-column">
+      <a routerLink="/" class="branding">
+        [ RegEx ]
+      </a>
+    </div>
+
+    <div class="column nav-column">
+      <ul class="nav">
+
+        <li class="nav-item" *ngFor="let item of navigation">
+          <a [routerLink]="item.route" class="nav-item-a">
+            {{ '[ ' + item.name + ' ]' }}
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</div>
